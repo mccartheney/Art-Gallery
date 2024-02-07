@@ -1,13 +1,9 @@
-const getData = async () => {
-    const response = await fetch ("./../../data.json")
-    const data = await response.json()
-    return data;
-};
+import getData from "./getData/getData.js";
+
 
 window.onload = () => {
-    getData().then (arts => {
-        for (const art of arts) {
-            console.log(i);
-        }
+    //get all art classes
+    getData().then(arrayOfArts => {
+        console.log(arrayOfArts);
     })
 };
