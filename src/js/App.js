@@ -1,10 +1,15 @@
 import allArts from "./allArts/allArts.js";
+import getData from "./getData/getData.js";
 import topArts from "./topArts/topArts.js";
 
 window.onload = () => {
-    //active topArts
-    new topArts()
+    //get data from data.json
+    getData().then (data => {
+        //active topArts
+        new topArts()
 
-    //active AllArts
-    new allArts()
+        //active AllArts
+        new allArts(data)
+    })
+
 };

@@ -97,6 +97,10 @@ header nav a {
   height: 700px;
 }
 
+.image {
+  height: 300px;
+}
+
 .main_allArts {
   margin: 0px 50px;
   width: calc(100vw - 100px);
@@ -143,6 +147,7 @@ header nav a {
 }
 .main_allArts .main_allArts_arts .main_allArts_arts_art .main_allArts_arts_art_image img {
   height: 100%;
+  max-width: 100%;
 }
 .main_allArts .main_allArts_arts .main_allArts_arts_art .main_allArts_arts_art_textContent h1 {
   height: 70px;
