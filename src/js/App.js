@@ -1,9 +1,8 @@
 import getData from "./getData/getData.js";
-
+import topArts from "./topArts/topArts.js";
 
 window.onload = () => {
-    //get all art classes
-    getData().then(arrayOfArts => {
-        console.log(arrayOfArts);
-    })
+
+    //active topArts
+    new topArts()
 };

@@ -40,6 +40,7 @@ header nav a {
   }
 }
 .main_welcome {
+  overflow: hidden;
   width: calc(100vw - 100px);
   margin: 0px 50px;
 }
@@ -58,9 +59,13 @@ header nav a {
 
 .main_welcome_topArts {
   margin-top: 150px;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
 }
 .main_welcome_topArts .main_welcome_topArts_topArt {
+  margin-right: 50px;
   position: relative;
 }
 .main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_textContent {

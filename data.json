@@ -3,70 +3,70 @@
         "type": "Pintura",
         "title": "A Persistência da Memória",
         "medium": "Óleo sobre tela",
-        "image": "../images/aPersistenciaDaMemoria.jpeg",
+        "image": "/images/aPersistenciaDaMemoria.jpeg",
         "artist": "Salvador Dalí"
     },
     {
         "type": "Escultura",
         "title": "O Beijo",
         "medium": "Mármore",
-        "image": "../images/oBeijo.jpeg",
+        "image": "/images/oBeijo.jpeg",
         "artist": "Auguste Rodin"
     },
     {
         "type": "Fotografia",
         "title": "Menina Afegã",
         "medium": "Fotografia em cores",
-        "image": "../images/MeninaAfega.jpeg",
+        "image": "/images/MeninaAfega.jpeg",
         "artist": "Steve McCurry"
     },
     {
         "type": "Arte Digital",
         "title": "Expansão Cósmica",
         "medium": "Arte digital",
-        "image": "../images/espansãoCosmica.jpeg",
+        "image": "/images/espansãoCosmica.jpeg",
         "artist": "Artista Digital Anônimo"
     },
     {
         "type": "Instalação",
         "title": "A Sala dos Espelhos Infinitos",
         "medium": "Espelhos, luzes LED",
-        "image": "../images/salaDeEspelhos.jpeg",
+        "image": "/images/salaDeEspelhos.jpeg",
         "artist": "Yayoi Kusama"
     },
     {
         "type": "Gravura",
         "title": "O Grande Onda de Kanagawa",
         "medium": "Xilogravura em cores",
-        "image": "../images/grandeOnda.jpeg",
+        "image": "/images/grandeOnda.jpeg",
         "artist": "Katsushika Hokusai"
     },
     {
         "type": "Escultura",
         "title": "David",
         "medium": "Mármore",
-        "image": "../images/davi.jpeg",
+        "image": "/images/davi.jpeg",
         "artist": "Michelangelo"
     },
     {
         "type": "Pintura",
         "title": "Mona Lisa",
         "medium": "Óleo sobre madeira",
-        "image": "../images/oBeijo.jpeg",
+        "image": "/images/oBeijo.jpeg",
         "artist": "Leonardo da Vinci"
     },
     {
         "type": "Fotografia",
         "title": "O Homem na Lua",
         "medium": "Fotografia em preto e branco",
-        "image": "../images/homemNaLua.jpeg",
+        "image": "/images/homemNaLua.jpeg",
         "artist": "NASA"
     },
     {
         "type": "Arte Abstrata",
         "title": "Composição VIII",
         "medium": "Óleo sobre tela",
-        "image": "../images/composiçãoVIII.jpeg",
+        "image": "/images/composiçãoVIII.jpeg",
         "artist": "Wassily Kandinsky"
     }
 ]

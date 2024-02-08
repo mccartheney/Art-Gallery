@@ -5,6 +5,7 @@
         margin-left : -1000px
     
 .main_welcome
+    overflow: hidden
     width: calc( 100vw - 100px )
     margin: 0px 50px
 
@@ -23,9 +24,10 @@
     
 .main_welcome_topArts
     margin-top: 150px
-    white-space: nowrap
+    @include flexDisplay(row, start, start)
 
     .main_welcome_topArts_topArt
+        margin-right: 50px
         position: relative
 
         .main_welcome_topArts_topArt_textContent
