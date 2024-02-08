@@ -1,0 +1,55 @@
+@keyframes textAnimation
+    0%
+        margin-left : 0px
+    100%
+        margin-left : -1000px
+    
+.main_welcome
+    width: calc( 100vw - 100px )
+    margin: 0px 50px
+
+    h4
+        margin-top: 80px
+        padding-bottom: 25px
+        font-size: 35px
+        white-space: nowrap
+        overflow: hidden
+        color: $white
+        border-bottom: 1px solid $white
+
+
+        span
+            animation: textAnimation 7s infinite linear
+    
+.main_welcome_topArts
+    margin-top: 150px
+    white-space: nowrap
+
+    .main_welcome_topArts_topArt
+        position: relative
+
+        .main_welcome_topArts_topArt_textContent
+            position: absolute
+            top: -80px
+
+            .main_welcome_topArts_topArt_textContent_header
+                h1
+                    font-size: 180px
+            
+            .main_welcome_topArts_topArt_textContent_info
+                @include flexDisplay(row, start, center)
+                color: $white
+                font-size: 20px
+
+                p
+                    padding: 6px
+                    margin: 5px
+                .main_welcome_topArts_topArt_textContent_info-name
+                    background: $blue
+                .main_welcome_topArts_topArt_textContent_info-author
+                    background: $light-gray
+
+
+        .main_welcome_topArts_topArt_image
+            img
+                height: 700px

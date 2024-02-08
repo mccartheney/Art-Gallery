@@ -1,7 +1,97 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "PT Mono", monospace;
   margin: 0px;
   padding: 0px;
   border: 0px;
+}
+
+header {
+  width: calc(100vw - 100px);
+  border-bottom: 1px solid #eeeeee;
+  margin: 0px 50px;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+header h3 {
+  margin: 30px 60px 30px 60px;
+  font-size: 50px;
+  font-weight: 300;
+}
+header nav {
+  margin-bottom: -15px;
+}
+header nav a {
+  text-decoration: none;
+  color: #eeeeee;
+  margin: 0px 30px;
+  font-size: 19px;
+}
+
+@keyframes textAnimation {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+.main_welcome {
+  width: calc(100vw - 100px);
+  margin: 0px 50px;
+}
+.main_welcome h4 {
+  margin-top: 80px;
+  padding-bottom: 25px;
+  font-size: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.main_welcome h4 span {
+  animation: textAnimation 7s infinite linear;
+}
+
+.main_welcome_topArts {
+  margin-top: 150px;
+  white-space: nowrap;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt {
+  position: relative;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_textContent {
+  position: absolute;
+  top: -80px;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_textContent .main_welcome_topArts_topArt_textContent_header h1 {
+  font-size: 180px;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_textContent .main_welcome_topArts_topArt_textContent_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  color: #eeeeee;
+  font-size: 20px;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_textContent .main_welcome_topArts_topArt_textContent_info p {
+  padding: 6px;
+  margin: 5px;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_textContent .main_welcome_topArts_topArt_textContent_info .main_welcome_topArts_topArt_textContent_info-name {
+  background: #0092ca;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_textContent .main_welcome_topArts_topArt_textContent_info .main_welcome_topArts_topArt_textContent_info-author {
+  background: #393e46;
+}
+.main_welcome_topArts .main_welcome_topArts_topArt .main_welcome_topArts_topArt_image img {
+  height: 700px;
+}
+
+body {
+  background: #222831;
 }/*# sourceMappingURL=style.css.map */
