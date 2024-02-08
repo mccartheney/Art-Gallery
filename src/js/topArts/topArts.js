@@ -30,7 +30,6 @@ class topArts {
             }
 
             for (const htmlElement of arrayOf3Arts) {
-                console.log(htmlElement);
                 document.querySelector(".main_welcome_topArts").appendChild(htmlElement)
             }
         })
@@ -67,7 +66,6 @@ class topArts {
         //create image 
         const image = document.createElement("img");
         image.setAttribute("src", `../../src${imageUrl}`);
-        console.log(`${imageUrl}`);
         image.setAttribute("alt", "art image");
 
         //appending image to div
