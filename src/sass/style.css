@@ -102,6 +102,7 @@ header nav a {
 }
 
 .main_allArts {
+  display: none;
   margin: 0px 50px;
   width: calc(100vw - 100px);
 }
@@ -171,6 +172,65 @@ header nav a {
   color: #eeeeee;
   background: none;
   cursor: poiter;
+}
+
+.showArtDetail {
+  margin: 100px 50px;
+  width: calc(100vw - 100px);
+  position: relative;
+}
+.showArtDetail .showArtDetail_textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.showArtDetail .showArtDetail_textContent h1, .showArtDetail .showArtDetail_textContent h2, .showArtDetail .showArtDetail_textContent p {
+  padding-left: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.showArtDetail .showArtDetail_textContent h1 {
+  height: 120px;
+  font-size: 80px;
+  color: #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.showArtDetail .showArtDetail_textContent .authorDetail {
+  margin: 20px 0px;
+  font-size: 30px;
+  color: #eeeeee;
+}
+.showArtDetail .showArtDetail_textContent .mediumDetail {
+  margin-bottom: 20px;
+  color: #0092ca;
+}
+.showArtDetail .showArtDetail_textContent .typeDetail {
+  margin-bottom: 60px;
+  color: #0092ca;
+}
+.showArtDetail .showArtDetail_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #393e46;
+  height: 50vh;
+}
+.showArtDetail .showArtDetail_image img {
+  height: 100%;
+}
+.showArtDetail button {
+  font-size: 60px;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  background: none;
+  color: #0092ca;
+  cursor: pointer;
 }
 
 body {
