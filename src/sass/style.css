@@ -120,7 +120,7 @@ header nav a {
 }
 .main_allArts .main_allArts_header h2 {
   color: #eeeeee;
-  font-size: 35px;
+  font-size: 50px;
 }
 .main_allArts .main_allArts_header button {
   margin-left: 50px;
@@ -178,9 +178,10 @@ header nav a {
 }
 
 .showArtDetail {
-  margin: 100px 50px;
+  margin: 0px 50px;
   width: calc(100vw - 100px);
   position: relative;
+  overflow: hidden;
 }
 .showArtDetail .showArtDetail_textContent {
   display: flex;

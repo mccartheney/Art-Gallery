@@ -3,35 +3,34 @@ import getData from "../getData/getData.js";
 //initialize class top arts
 class topArts {
     constructor (data) {
-        getData().then(data => {
-            //atribute that data to arrayOfArts
-            this.arrayOfArts = data;
-    
-            //get first 3 elements of array of arts
-            const firstsElements = this.first3elements(this.arrayOfArts);
-    
-            //array for html elements of 3 first arts
-            let arrayOf3Arts = [];
-    
-            //loop through the first 3 arts
-            for (const i in firstsElements) {
-                //create vars to put in the html element
-                let newImage = firstsElements[i].image;
-                let nElement = `0${Number(i)+1}`;
-                let newName = firstsElements[i].title;
-                let newAuthor = firstsElements[i].artist;
-    
-                //create top art with the vars above
-                let newTopArt = this.createTopArt(newImage, nElement, newName, newAuthor);
-    
-                //add html element to html array
-                arrayOf3Arts.push(newTopArt);
-            }
-    
-            for (const htmlElement of arrayOf3Arts) {
-                document.querySelector(".main_welcome_topArts").appendChild(htmlElement)
-            }
-        })
+        console.log(data);
+        //atribute that data to arrayOfArts
+        this.arrayOfArts = data;
+
+        //get first 3 elements of array of arts
+        const firstsElements = this.first3elements(this.arrayOfArts);
+
+        //array for html elements of 3 first arts
+        let arrayOf3Arts = [];
+
+        //loop through the first 3 arts
+        for (const i in firstsElements) {
+            //create vars to put in the html element
+            let newImage = firstsElements[i].image;
+            let nElement = `0${Number(i)+1}`;
+            let newName = firstsElements[i].title;
+            let newAuthor = firstsElements[i].artist;
+
+            //create top art with the vars above
+            let newTopArt = this.createTopArt(newImage, nElement, newName, newAuthor);
+
+            //add html element to html array
+            arrayOf3Arts.push(newTopArt);
+        }
+
+        for (const htmlElement of arrayOf3Arts) {
+            document.querySelector(".main_welcome_topArts").appendChild(htmlElement)
+        }
     }
 
     first3elements (array) {
