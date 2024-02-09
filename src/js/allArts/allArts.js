@@ -1,4 +1,5 @@
 import getData from "../getData/getData.js";
+import showArtDetails from "./showArtDetails/showArtDetails.js";
 
 class allArts {
     constructor (data) {
@@ -11,7 +12,7 @@ class allArts {
         //loop through arts
         for (const art of data) {
             //create new html art element
-            const newArtElement = this.createContentDiv(art.image, art.title, art.artist, art.medium);
+            const newArtElement = this.createContentDiv(art.image, art.title, art.artist, art.medium, art.type);
 
             //add this html art to htmlElements
             htmlElements.push(newArtElement)
@@ -33,7 +34,6 @@ class allArts {
         const image = document.createElement("img");
         image.classList.add("image")
         image.setAttribute("src", `../../src${imageUrl}`)
-        console.log(imageUrl);
         //appending image to imageDiv
         imageDiv.appendChild(image)
 
@@ -68,16 +68,18 @@ class allArts {
         return textContentDiv;
     }
 
-    createButton () {
+    createButton(url, name, author, material, type) {
         //create button
         const button = document.createElement("button");
         button.setAttribute("id", "showDetails")
         button.textContent = "Find out more >";
 
+        button.onclick = () => { new showArtDetails(url, name, author, material, type)}
+
         return button;
     }
 
-    createContentDiv (url, name, author, material) {
+    createContentDiv (url, name, author, material, type) {
         //create mainDiv
         const mainDiv = document.createElement("div");
         mainDiv.classList.add("main_allArts_arts_art");
@@ -85,7 +87,7 @@ class allArts {
         //append all content to mainDiv
         mainDiv.appendChild(this.createImageContent(url))
         mainDiv.appendChild(this.createTextContent(name, author, material));
-        mainDiv.appendChild(this.createButton())
+        mainDiv.appendChild(this.createButton(url, name, author, material, type))
 
         return mainDiv;
     }
