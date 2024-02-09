@@ -7,8 +7,12 @@
 }
 
 header {
-  width: calc(100vw - 100px);
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+  background: #222831;
   border-bottom: 1px solid #eeeeee;
+  width: calc(100vw - 100px);
   margin: 0px 50px;
   color: #eeeeee;
   display: flex;
@@ -230,6 +234,20 @@ header nav a {
   background: none;
   color: #0092ca;
   cursor: pointer;
+}
+
+footer {
+  width: calc(100vw - 100px);
+  margin: 0px 50px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #eeeeee;
+  margin-top: 40px;
+  border-top: 1px solid #eeeeee;
 }
 
 body {
