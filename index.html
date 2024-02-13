@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mc's gallery</title>
 
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="./src/sass/style.css">
 
+    <script src="./node_modules/aos/dist/aos.js"></script>
     <script type="module" src="./src/js/App.js"></script>
+
+    
 </head>
 <body>
     
     <header>
         <h3 class="header-h3">Mc's Gallery</h3>
         <nav class="header_nav">
-            <a href="#">Home</a>
-            <a href="#">Types</a>
-            <a href="#">Artists</a>
+            <a href="#welcome">Home</a>
         </nav>
     </header>
     <main>
-        <div class="main_welcome">
+        <div class="main_welcome" id="welcome">
             <h4 class="main_welcome-h4">
                 <span>
                     Welcome to Mc's gallery // The best place to save yours favorites arts // Welcome to Mc's gallery // The best place to save yours favorites arts
                 </span>
             </h4>
 
-            <div class="main_welcome_topArts">
-                <!-- place here top 3 arts with js -->
+            <div class="scrollDiv">
+                <div class="main_welcome_topArts">
+                    <!-- place here top 3 arts with js -->
+                </div>
             </div>
         </div>
 
@@ -45,9 +49,10 @@
                 </h2>
 
                 <div class="main_allArts_header_modes">
-                    <button class="authors">Author ></button>
-                    <button class="types">Type ></button>
-                    <button class="materials">Material ></button>
+                    <button class="All">All ></button>
+                    <button class="Artists">Author ></button>
+                    <button class="Types">Type ></button>
+                    <button class="Mediums">Mediums ></button>
                 </div>
             </div>
             
@@ -59,5 +64,9 @@
     <footer>
         Developed by Mccartheney
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

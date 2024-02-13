@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@chazzy13/shuffle": "^1.0.5",
+    "aos": "^2.3.4"
+  }
+}

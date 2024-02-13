@@ -1,0 +1,30 @@
+.popUpContainer
+    position: fixed
+    width: 100vw
+    min-height: 100vw
+    top: 10px
+    z-index: 11
+    background-color: #8790b998
+
+    .popUp 
+        h1
+            color: $white
+            font-size: 70px
+            margin-bottom: 50px
+            
+            &::first-letter
+                text-transform: capitalize
+
+        min-height: 100vh
+        @include flexDisplay(column, center, center)
+
+        button 
+            color: $white
+            background: $dark-gray
+            width: 400px
+            height: 50px
+            margin: 10px
+
+            font-size: 20px
+
+            cursor: pointer

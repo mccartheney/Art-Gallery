@@ -63,6 +63,7 @@ class createArt {
         //create mainDiv
         const mainDiv = document.createElement("div");
         mainDiv.classList.add("main_allArts_arts_art");
+        mainDiv.setAttribute("data-aos", "flip-down");
 
         //append all content to mainDiv
         mainDiv.appendChild(this.createImageContent(url))

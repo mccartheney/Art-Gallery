@@ -1,9 +1,6 @@
-import getData from "../getData/getData.js";
-
 //initialize class top arts
 class topArts {
     constructor (data) {
-        console.log(data);
         //atribute that data to arrayOfArts
         this.arrayOfArts = data;
 
@@ -33,6 +30,7 @@ class topArts {
         }
     }
 
+    //This function will return the first 3 values from one array
     first3elements (array) {
         let ThreeElements = [];
 
@@ -44,18 +42,23 @@ class topArts {
         return ThreeElements;
     }
 
+
+    //This function will return htmlComponent to append to one div
     createTopArt (imageUrl, nElement, name, author) {
         //create top art div
         const topArtDiv = document.createElement("div");
         topArtDiv.classList.add("main_welcome_topArts_topArt");
+        topArtDiv.setAttribute("data-aos", "fade-left");
+        
 
         //appending elements to topArtDiv
-        topArtDiv.appendChild(this.createTextContent(nElement, name, author));
-        topArtDiv.appendChild(this.createImageContent(imageUrl));
+        topArtDiv.appendChild(this.createTextContent(nElement, name, author)); //the textContent
+        topArtDiv.appendChild(this.createImageContent(imageUrl)); //the imageContent
 
         return topArtDiv;
     }
 
+    //this function will return htmlComponent which have the image content to append to topArt
     createImageContent (imageUrl) {
         //create image div
         const imageDiv = document.createElement("div");
@@ -72,6 +75,7 @@ class topArts {
         return imageDiv;
     }
 
+    //This finction return another htmlComponent which have to text content to append on top art
     createTextContent (nElement, name, author) {
         //textContentDiv
         const textContentDiv = document.createElement("div");

@@ -21,37 +21,44 @@
 
         span
             animation: textAnimation 7s infinite linear
-    
-.main_welcome_topArts
-    margin-top: 150px
-    @include flexDisplay(row, start, start)
 
-    .main_welcome_topArts_topArt
-        margin-right: 50px
-        position: relative
+.scrollDiv
+    height: 800px
+    @include flexDisplay(row, start, end)
+    overflow: scroll
 
-        .main_welcome_topArts_topArt_textContent
-            position: absolute
-            top: -80px
+    .main_welcome_topArts
+        margin-top: 150px
+        @include flexDisplay(row, start, start)
 
-            .main_welcome_topArts_topArt_textContent_header
-                h1
-                    font-size: 180px
+        .main_welcome_topArts_topArt
+            margin-right: 50px
+            position: relative
+
+            .main_welcome_topArts_topArt_textContent
+                position: absolute
+                top: -80px
+
+                .main_welcome_topArts_topArt_textContent_header
+                    h1
+                        font-size: 180px
+                        color: $white
+                        text-shadow: 1px 3px 6px rgba(0,0,0,0.6)
+                
+                .main_welcome_topArts_topArt_textContent_info
+                    @include flexDisplay(row, start, center)
+                    color: $white
+                    font-size: 20px
+
+                    p
+                        padding: 6px
+                        margin: 5px
+                    .main_welcome_topArts_topArt_textContent_info-name
+                        background: $blue
+                    .main_welcome_topArts_topArt_textContent_info-author
+                        background: $light-gray
             
-            .main_welcome_topArts_topArt_textContent_info
-                @include flexDisplay(row, start, center)
-                color: $white
-                font-size: 20px
 
-                p
-                    padding: 6px
-                    margin: 5px
-                .main_welcome_topArts_topArt_textContent_info-name
-                    background: $blue
-                .main_welcome_topArts_topArt_textContent_info-author
-                    background: $light-gray
-        
-
-        .main_welcome_topArts_topArt_image
-            img
-                height: 700px
+            .main_welcome_topArts_topArt_image
+                img
+                    height: 700px

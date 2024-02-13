@@ -7,13 +7,13 @@
         @include flexDisplay (column, end, start)
 
         h1,h2,p
-            padding-left: 20%
+            padding-left: 50px
             width: 100%
             @include flexDisplay (column, center, start)
 
         h1
             height: 120px
-            font-size: 80px
+            font-size: 40px
             color: $white
             border-bottom: 1px solid $white
 
@@ -48,3 +48,20 @@
         background: none
         color: $blue
         cursor: pointer
+
+@media (min-width: 768px) and (max-width: 979px)
+    h1,h2,p
+        padding-left: 20px !important
+    h1
+        font-size: 25px !important
+
+@media (max-width: 767px)
+    .showArtDetail_textContent
+
+        h1,h2,p
+            padding-left: 1px !important
+        h1
+            font-size: 25px !important
+
+    .showArtDetail_image
+        height: 200px !important

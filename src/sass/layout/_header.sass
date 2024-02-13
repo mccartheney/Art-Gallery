@@ -1,7 +1,7 @@
 header 
     position: sticky
     top: 0px
-    z-index: 10000
+    z-index: 10
     background: $dark-gray
     border-bottom: 1px solid $white
     width: calc( 100vw - 100px )
@@ -22,3 +22,9 @@ header
             color: $white
             margin: 0px 30px
             font-size: 19px
+
+@media (max-width: 767px)
+    header
+        height: 170px !important
+        display: flex
+        flex-direction: column !important

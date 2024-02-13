@@ -18,7 +18,6 @@ const getData = async() => {
     //trandform all data in json
     const data = await response.json();
 
-    console.log("here");
     //loop throught data
     for (const art of data) {
         //in each art create a art class
